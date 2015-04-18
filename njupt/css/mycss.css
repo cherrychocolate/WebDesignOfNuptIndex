@@ -1,0 +1,318 @@
+@charset "utf-8";
+.mytextcolor {color:#666}
+#user th, #user td { text-align: center; }
+#delete th, #delete td { text-align: center; vertical-align: middle; }
+#myTab th, #myTab td { text-align: center; vertical-align: middle; }
+
+body{
+	padding: 0px;
+	margin: 0px;
+	border: 0px; 
+}
+/*顶层导航栏*/
+a:hover{
+	text-decoration: none;
+}
+.navbar{
+	min-height: 40px;
+}
+.navbar-inverse{
+	border-radius: 0px;
+	width: 100%;
+	margin: 0px;
+}
+
+#topNav-left li a{
+	padding: 10px 0px; 
+	padding-right: 20px;
+}
+#topNav-left li a:hover {
+    color: #FC4D75;
+ }
+#topNav-right li a{
+	padding: 10px 0px; 
+	padding-left: 20px; 	
+}
+ 
+#topNav-right li a:hover{
+ 	color: #FC4D75;
+ 	padding-right: 0px;
+}
+
+#topNav-left{
+    float: left;
+    margin-left: 5%;
+}
+#topNav-right{
+    float: right;
+    margin-right: 5%;
+}
+#search{
+	float: right;
+	margin-left: 10px;
+	margin-top: 6px;
+}
+#search-text{
+	width: 150px;
+	height: 28px;
+}
+#search-button{
+	height: 28px;
+	width: 28px;
+	background-color: gray; 
+	border-color: gray;
+}
+.glyphicon-search{
+	font-size: 12px;
+	color: white;
+}
+s#earch-button .glyphicon{
+	left: -2px;
+}
+.glyphicon-search:hover{
+	color: rgb(178, 220, 251);
+}
+/*校徽，
+--------------------搜索快速连接栏*/
+
+#second-nav{
+	height: 100px;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+#nupt-logo{
+	float: left;
+	margin-left: 5%;
+}
+#nupt-logo img{
+	margin: 15px 0px;
+	width: auto;
+	float: left;
+	position: absolute;
+	height: 100px;
+	margin-top: 20px;
+	z-index: 10;
+}
+
+#friendLinks{
+	float: right;
+	top: 20px;
+	margin-bottom: 0px;
+	margin-right: 5%;
+	padding: 0px;
+}
+
+/*第三层－
+------------------------------主要导航栏*/
+#main-nav{
+	background-color: #0B307A;
+	
+	border-radius: 0px;
+	border: 0px;
+	width: 100%;
+}
+#main-nav a{
+	font-size: 20px;
+}
+#nagevition{
+	margin: 0px;
+	border-radius: 0px;
+	background-color: #0B307A;
+	border: 0px;
+	background: -webkit-linear-gradient(bottom, #000 , #0B307A); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom, #000 , #0B307A);/* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom, #000 , #0B307A); /* Firefox 3.6 - 15 */
+    background: linear-gradient(bottom, #000 , #0B307A); /* 标准的语法 */
+}
+
+#links{
+	float: left;
+	text-align: center;
+	width: 90%;
+	margin-left: 5%;
+
+}
+#links li{
+	font-size: 22px;
+	text-align: left;
+	padding: 10px 0px;
+}
+#links li a{
+	padding:0px;
+	margin: 5px 0px;
+}
+
+#links li a:hover{
+	color: 
+}
+
+/*  slide
+----------------*/
+.carousel-indicators{
+	position: absolute;
+	top: 440px;
+}
+.carousel-indicators li{
+	border-color: #0B307A;
+}
+.carousel-indicators .active{
+	background-color: #0B3079;
+}
+
+.slide-cover{
+	height: 430px;
+	width: 30%;
+	float: right;
+	padding: 0px;
+	vertical-align: center;
+}
+.carousel-caption.p{
+	font-size: 16px;
+	margin:40px; 
+}
+.slide-cover{
+	width: 30%;
+	height: 100%;
+	padding: 0px; 
+	left: 57.5%;
+	box-shadow: -5px -5px rgb(10,10,10,0.5);
+}
+#slide-bg-01{
+	background-color: #3F93F7;
+	background: -webkit-linear-gradient(top, #1F3E64 , #3F93F7); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(top, #1F3E64 , #3F93F7);/* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(top, #1F3E64 , #3F93F7); /* Firefox 3.6 - 15 */
+    background: linear-gradient(top, #1F3E64 , #3F93F7); /* 标准的语法 */
+}
+#slide-bg-02{
+	background-color: #293B5E;
+    background: -webkit-linear-gradient(top, #1A1F2A , #293B5E); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(top, #1A1F2A , #293B5E);/* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(top, #1A1F2A , #293B5E); /* Firefox 3.6 - 15 */
+    background: linear-gradient(top, #1A1F2A , #293B5E); /* 标准的语法 */
+}
+#slide-bg-03{
+	background-color: #A53539;
+	background: -webkit-linear-gradient(top, #3A0C0D , #A53539); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(top, #3A0C0D , #A53539);/* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(top, #3A0C0D , #A53539); /* Firefox 3.6 - 15 */
+    background: linear-gradient(top, #3A0C0D , #A53539); /* 标准的语法 */
+}
+#slide-bg-04{
+	/*background-color: #1D0101;*/
+	background: -webkit-linear-gradient(top, #000 , #514E4E); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(top, #000 , #514E4E);/* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(top, #000 , #514E4E); /* Firefox 3.6 - 15 */
+    background: linear-gradient(top, #000 , #514E4E); /* 标准的语法 */
+}
+#slide-bg-05{
+	background-color: #6C9972;
+	background: -webkit-linear-gradient(top, #263528 , #6C9972); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(top, #263528 , #6C9972);/* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(top, #263528 , #6C9972); /* Firefox 3.6 - 15 */
+    background: linear-gradient(top, #263528 , #6C9972); /* 标准的语法 */
+}
+
+#myCarousel{
+	margin-top: 0px;
+}
+
+
+/*media 
+---------------------------媒体印痕*/
+#headline{
+	width: 90%;
+	margin-left: 5%;
+	height: 350px;
+}
+#medium{
+	float: left;
+	margin-left: 0px;  
+}
+.text-danger{
+	margin-top: 0px;
+}
+
+#news{
+	float: right;
+	margin-right: 0px; 
+}
+#news-right{
+	float: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+#news-left{
+	padding-left: 0px;
+}
+.Newstitle{
+	color: #5a5a5a;
+	padding: 10px 0px;
+	font-size: 18px;
+	width: 241px;
+}
+.Newstitle:hover{
+	color: #3F9EEF;
+}
+.news-date .col-xs-7{
+	padding-left: 0px;
+}
+#news-right{
+	float: right;
+}
+#news-right img,#news-right a{
+	float: right;
+	margin-right: 0px;
+}
+#news-right .col-xs-7{
+	margin:0px;
+	padding:0px;
+	margin-left: 24px;
+}
+#news-right .col-xs-5{
+	margin:0px;
+	padding:0px;
+	width: 68px;
+	float: right;
+}
+/* activity
+------------------------------*/
+#activity{
+	float: left;
+	width: 90%;
+	height: 200px;
+	margin-left: 5%;
+	border: 1px solid #999;
+}
+/* footer
+-----------------------------*/
+footer{
+	margin-top: 40px;
+	height: 500px;
+}
+#footer-bottom{
+	height: 100px;
+	background-color: #333;
+	color: #fff;
+}
+#footer-bottom .col-xs-7{
+	float: left;
+	margin-left: 5%;
+	padding: 10px 0px 0px 0px;
+}
+#footer-bottom .col-xs-3{
+	float: right;
+	margin-right: 5%;
+	padding: 10px 0px 0px 0px;
+	padding-top: 30px;
+}
+#footer-bottom .col-xs-3 p{
+	float: right;
+	margin-bottom: 0px;
+	margin-top:10px;
+}
+#footer-bottom .col-xs-3 #copy{
+	margin-top: 0px;
+}
