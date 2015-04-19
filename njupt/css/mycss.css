@@ -104,6 +104,111 @@ s#earch-button .glyphicon{
 	padding: 0px;
 }
 
+/*secondnav.css*/
+/**
+*在Position属性值为absolute的同时，
+*如果有一级父对象（无论是父对象还是祖父对象，或者再高的辈分，一样）
+*的Position属性值为Relative时，则上述的相对浏览器窗口定位将会变成相对父对象定位，
+*这对精确定位是很有帮助的。
+*/
+
+#second-nav nav{
+    width: 800px;
+    height: 30px;
+    line-height: 30px;
+    /*导航位置*/
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    float: right;
+}
+/*nav-main*/
+#second-nav .nav-main{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+#second-nav .nav-main span{
+    display: inline-block;
+    margin-left: 18px;
+    width: 16px;
+    height: 7px;
+    background: url('../images/down-icon.gif') no-repeat;
+}
+/*图标向上旋转*/
+.hover-up{
+    transition-duration: .5s;
+    transform: rotate(180deg);    
+    -webkit-transform: rotate(180deg);
+}
+/*图标向下旋转*/
+.hover-down{
+    transition-duration: .5s;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+/*导航条设置*/
+#second-nav .nav-main>li{
+    width: 120px;
+    height: 100%;
+    display: block;
+    float: left;
+    background: #fff;
+    color: gray;
+    margin-right: 1px;
+    cursor: pointer;
+
+}
+#second-nav .nav-main>li:hover{
+    color: blue;
+    border: 1px solid gray;
+    border-bottom: 1px solid #fff;
+    z-index: 10;
+}
+/*隐藏盒子设置*/
+.hidden-box{
+    width: 128px;
+    border: 1px solid gray;
+    position: absolute;
+    display: none;
+    top: 30px;
+}
+.hidden-box>ul{
+    list-style-type: none;
+    color: #ff3e3e;
+    cursor: pointer;
+}
+
+.hidden-box li{
+    text-align: left;
+    font-size: 10px;
+    margin-left: 20px;
+    list-style-type: none;
+}
+.hidden-box a{
+    text-decoration: none;
+    color: gray;
+}
+.hidden-box a:hover{
+    color: #fff;
+}
+
+/*隐藏盒子位置设置*/
+.hidden-loc-science{
+    left: 121px;
+}
+.hidden-loc-admin{
+    left: 242px;
+}
+.hidden-loc-people{
+    left: 363px;
+}
+.hidden-loc-apply{
+    left: 484px;
+}
+
+
+
 /*第三层－
 ------------------------------主要导航栏*/
 #main-nav{
@@ -114,38 +219,41 @@ s#earch-button .glyphicon{
 	width: 100%;
 }
 #main-nav a{
-	font-size: 20px;
+	font-size: 17px;
 }
 #nagevition{
 	margin: 0px;
 	border-radius: 0px;
-	background-color: #0B307A;
+	background-color: #fff;
 	border: 0px;
+	/*
 	background: -webkit-linear-gradient(bottom, #000 , #0B307A); /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(bottom, #000 , #0B307A);/* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(bottom, #000 , #0B307A); /* Firefox 3.6 - 15 */
-    background: linear-gradient(bottom, #000 , #0B307A); /* 标准的语法 */
+    /*background: -o-linear-gradient(bottom, #000 , #0B307A);/* Opera 11.1 - 12.0 */
+    /*background: -moz-linear-gradient(bottom, #000 , #0B307A); /* Firefox 3.6 - 15 */
+    /*background: linear-gradient(bottom, #000 , #0B307A); /* 标准的语法 */
+   	
 }
 
 #links{
-	float: left;
+	position: absolute;
 	text-align: center;
-	width: 90%;
-	margin-left: 5%;
-
+	right: 5%;
 }
 #links li{
-	font-size: 22px;
 	text-align: left;
 	padding: 10px 0px;
+	padding-bottom: 2px;
 }
 #links li a{
-	padding:0px;
-	margin: 5px 0px;
+	padding: 0px;
+	padding-bottom: 2px;
+	margin-top: 5px;
+	margin-left: 30px;
 }
 
 #links li a:hover{
-	color: 
+	color: #EEA93E;
+	border-bottom: 4px solid #EEA93E;
 }
 
 /*  slide
@@ -277,8 +385,25 @@ s#earch-button .glyphicon{
 	width: 68px;
 	float: right;
 }
+#medium{
+	padding-left: 0px;
+	margin-left: 0px;
+}
+/*weibo & new media
+---------------*/
+#weibo{
+	float: left;
+	display: block;
+	margin-left: 6%;
+}
 /* activity
 ------------------------------*/
+.act{
+	height: 280px;
+	width: auto;
+	background-color: #F2F1F2;
+	border-top: 1px solid #D5D5D7;
+}
 #activity{
 	float: left;
 	width: 90%;
@@ -289,7 +414,6 @@ s#earch-button .glyphicon{
 /* footer
 -----------------------------*/
 footer{
-	margin-top: 40px;
 	height: 500px;
 }
 #footer-bottom{
@@ -316,3 +440,4 @@ footer{
 #footer-bottom .col-xs-3 #copy{
 	margin-top: 0px;
 }
+
